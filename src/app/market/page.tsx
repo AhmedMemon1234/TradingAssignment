@@ -2,10 +2,17 @@
 import { MdSearch } from "react-icons/md";
 import { useEffect, useState } from "react";
 
+interface Rates {
+   [key: string]: number;
+ }
+ 
+ interface ApiResponse {
+   rates: Rates;
+ }
 export default function Market() {
   const ApiKey = "06cade53bd56fb49abeb566fcf17ea99";
   const [search, setSearch] = useState("");
-  const [data, setData] = useState<any>(null);
+  const [data, setData] = useState<ApiResponse | null>(null);
   useEffect(() =>{
     fetch(`http://api.coinlayer.com/live?access_key=${ApiKey}`)
     .then((response) => response.json())
