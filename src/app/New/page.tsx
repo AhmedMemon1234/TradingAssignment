@@ -9,7 +9,7 @@ interface Rates {
    rates: Rates;
  }
 export default function New() {
-    const ApiKey = "06cade53bd56fb49abeb566fcf17ea99";
+    const ApiKey = "512fe58c239bbb5cf6a45146a5fe0487";
   const [data, setData] = useState<ApiResponse | null>(null);
   useEffect(() =>{
     fetch(`https://api.coinlayer.com/live?access_key=${ApiKey}`)
