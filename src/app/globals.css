@@ -1414,21 +1414,6 @@ position: absolute;
   100%{
     background-color: red;
   }
-                }
-.FooterParent{
-  width:100%;
-  background-color:black;
-  height:10%;
-}
-.FooterChild{
-  display:flex;
-  width:100%;
-  height:10%;
-  color:white;
-  padding-top:10px;
-  margin-left:1vw;
-  justify-content:center;
-  font-size:10px;
 }
 @media (max-width:480px){
   .ChildHeader{

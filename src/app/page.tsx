@@ -3,7 +3,6 @@ import Market from "./market/page";
 import Gain from "./gainers/page";
 import Lose from "./Losers/page";
 import New from "./New/page";
-import Footer from "./Footer/Footer";
 export default function Home(){
   return(
     <div className="Parent">
@@ -18,7 +17,6 @@ export default function Home(){
       <Gain/>
       <Lose/>
       <New/>
-      <Footer/>
     </div>
   )
 }
