@@ -2,26 +2,4885 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.Parent{
+  width: 100%;
+  height: 80vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.Child{
+  display: flex;
+  width: 100%;
+  height: 80vh;
+}
+
+.ParentHeader{
+  background-color:#00294B;
+  height: 10vh;
+  width: 100%;
+}
+.ChildHeader{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+}
+.ChildHeader .bitahmed{
+  margin-top: 2vh;
+  margin-left: 20vw;
+  font-size: 2vw;
+  font-weight: bolder;
+  color: white;
+  cursor: context-menu;
+}
+.ChildHeader .bitahmed span{
+  color: orange;
+}
+.ChildHeader .bitcoinlogo{
+margin-left: -73.5vw;
+margin-top: 2vh;
+font-size: 3vw;
+cursor: context-menu;
+color: gold;
+}
+.ChildHeader ul {
+  margin-left: 27vw;
+  margin-top: 0vh;
+  font-size: 1.3vw;
+  font-family: Arial, Helvetica, sans-serif;
+  gap: 4vw;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+color: white;
+}
+.ChildHeader ul .home{
+color: orangered;
+}
+
+.ChildHeader ul .home:hover{
+  color: orangered;
+  border-bottom: 1px solid orangered;
+  transform: translateY(-3px);
+  transition: 0.3s;
+  }
+  
+
+.ChildHeader ul .market:hover{
+  color: orangered;
+  border-bottom: 1px solid orangered;
+  transform: translateY(-3px);
+  transition: 0.3s;
+  }
+  
+
+.ChildHeader ul .coins:hover{
+  color: orangered;
+  border-bottom: 1px solid orangered;
+  transform: translateY(-3px);
+  transition: 0.3s;
+  }
+  
+
+.ChildHeader ul .search:hover{
+  color: orangered;
+  border-bottom: 1px solid orangered;
+  transform: translateY(-3px);
+  transition: 0.3s;
+  }
+.ChildHeader ul button{
+  background-color: orangered;
+  padding: 1vh 1vh;
+  margin-left: -2.5vw;
+  border-radius: 0.5vw;
+}
+.ChildHeader ul button:hover{
+  color: orangered;
+  transform: translateY(-3px);
+  color: black;
+  transition: 0.3s;
+}
+
+.bitcoinimg{
+  width: 100%;
+  height: 90vh;
+  filter: blur(3px);
+  -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+@-webkit-keyframes puff-in-center {
+0% {
+-webkit-transform: scale(2);
+    transform: scale(2);
+-webkit-filter: blur(4px);
+    filter: blur(4px);
+opacity: 0;
+}
+100% {
+-webkit-transform: scale(1);
+    transform: scale(1);
+-webkit-filter: blur(0px);
+    filter: blur(0px);
+opacity: 1;
+}
+}
+@keyframes puff-in-center {
+0% {
+-webkit-transform: scale(2);
+    transform: scale(2);
+-webkit-filter: blur(4px);
+    filter: blur(4px);
+opacity: 0;
+}
+100% {
+-webkit-transform: scale(1);
+    transform: scale(1);
+-webkit-filter: blur(0px);
+    filter: blur(0px);
+opacity: 1;
+}
+}
+.Child .headingmain{
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin-left: -85vw;
+  font-size: 4vw;
+  width: 45vw;
+  color: black;
+  cursor: context-menu;
+  font-weight: bolder;
+  margin-top: 20vh;
+  z-index: 100;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  -webkit-text-stroke: 1px black;
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.Child .headingmain span{
+  color: orangered;
+}
+.Child .paragraph{
+margin-left: -45vw;
+position: absolute;
+justify-content: center;
+align-items: center;
+font-size: 1vw;
+cursor: context-menu;
+color: black;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+z-index: 100;
+width: 40vw;
+margin-top: 60vh;
+}
+.Child .Explore{
+  position: relative;
+  z-index: 200;
+  margin-left: -40vw;
+  margin-top: 133vh;
+  border-radius: 0.5vw;
+  padding: 1vh 1vh;
+  font-weight: 600;
+  background-color: orangered;
+  transition: 0.5s ease;
+}
+.Child .Explore:hover{
+  transform: translateY(-2px);
+  background-color: red;
+
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.mobileimg{
+  z-index: 100;
+  width: 40vw;
+  height: 80vh;
+  filter:brightness(12px);
+  margin-top: 5vh;
+  margin-left: 33vw;
+  -webkit-animation: swirl-in-fwd 0.6s ease-out both;
+	        animation: swirl-in-fwd 0.6s ease-out both;
+}
+@-webkit-keyframes swirl-in-fwd {
+  0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+            transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes swirl-in-fwd {
+  0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+            transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.menu{
+  display: none;
+}
+.ParentMarket{
+  width: 100%;
+  height: 170vh;
+  margin-top: 8vh;
+  animation: appear linear;
+  animation-timeline: view();
+}
+.ChildMarket{
+  width: 100%;
+  height: 100%;
+  color: black;
+  position: relative;
+  display: flex;
+}
+.ChildMarket .input1{
+  width: 60%;
+  margin-left: -4vw;
+  background-color: black;
+  margin-top: 10vh;
+  color: white;
+  padding-left: 5vw;
+  height: 5%;
+}
+.ChildMarket .icon{
+  margin-top: 11.5vh;
+  z-index: 100;
+  color: white;
+  font-size: 2.5vw;
+  margin-left: 22vw;
+}
+.ChildMarket ul{
+  display: flex;
+  justify-content: center;
+  font-size: 2vw;
+  margin-left: 35.5vw;
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  margin-top: 30vh;
+  gap: 2vw;
+  font-weight: 500;
+  align-items: center;
+  transition: 0.3s ease;
+}
+.ChildMarket .hot{
+  border-bottom: 2px solid orangered;
+}
+.ChildMarket .hot:hover{
+  transform: translateY(-5px);
+}
+
+.ChildMarket .gainers:hover{
+  border-bottom: 2px solid orangered;
+  transform: translateY(-5px);
+}
+
+.ChildMarket .losers:hover{
+  border-bottom: 2px solid orangered;
+  transform: translateY(-5px);
+}
+
+.ChildMarket .new:hover{
+  border-bottom: 2px solid orangered;
+  transform: translateY(-5px);
+}
+.ChildMarket .coins{
+  margin-top: 52vh;
+  gap: 35vw;
+}
+.ChildMarket .coin1{
+  margin-left: -13.7vw;
+}
+.ChildMarket .pkr1{
+  color: gray;
+  margin-left: -45vw;
+  margin-top: 7vh;
+  font-size: 1vw;
+}
+.ChildMarket .plus1{
+margin-left: 50.1vw;
+font-size: 1.3vw;
+position: absolute;
+background-color: #39b73e;
+padding: 0.8vh 0.8vh;
+border-radius: 0.3vw;
+animation: 1s flicker infinite alternate;
+}
+@keyframes flicker{
+  0%{
+    background-color: #39b73e;
+  }
+  100%{
+    background-color: red;
+  }
+}
+
+.ChildMarket .coins2{
+margin-top: 67vh;
+gap: 35vw;
+position: absolute;
+margin-left: 21.5vw;
+}
+
+.ChildMarket .pkr2{
+  color: gray;
+  margin-left: -44.4vw;
+  margin-top: 7vh;
+  font-size: 1vw;
+}
+.ChildMarket .dollar2{
+  margin-left: 1vw;
+}
+.ChildMarket .plus2{
+margin-left: 63.5vw;
+font-size: 1.3vw;
+position: absolute;
+background-color:red;
+padding: 0.8vh 0.8vh;
+border-radius: 0.3vw;
+animation: 1s flicker infinite alternate;
+}
+@keyframes flicker{
+  0%{
+    background-color: #39b73e;
+  }
+  100%{
+    background-color: red;
+  }
+}
+
+
+.ChildMarket .coins3{
+  margin-top: 82vh;
+  gap: 35vw;
+  position: absolute;
+  margin-left: 21.5vw;
+  }
+  .ChildMarket .pkr3{
+    margin-left: -44.4vw;
+    color: gray;
+    margin-top: 7vh;
+    font-size: 1vw;
+  }
+  .ChildMarket .dollar3{
+    margin-left: 1vw;
+  }
+  .ChildMarket .plus3{
+  margin-left: 63vw;
+  font-size: 1.3vw;
+  position: absolute;
+  background-color:#39b73e;
+  padding: 0.8vh 0.8vh;
+  border-radius: 0.3vw;
+  animation: 1s flicker infinite alternate;
+}
+@keyframes flicker{
+  0%{
+    background-color: #39b73e;
+  }
+  100%{
+    background-color: red;
+  }
+  }
+
+  .ChildMarket .coins4{
+    margin-top: 97vh;
+    gap: 35vw;
+    position: absolute;
+    margin-left: 21.5vw;
+    }
+    .ChildMarket .pkr4{
+      margin-left: -41.4vw;
+      margin-top: 7vh;
+      font-size: 1vw;
+      color: gray;
+    }
+    .ChildMarket .dollar4{
+      margin-left: 2vw;
+    }
+    .ChildMarket .plus4{
+    margin-left: 63.5vw;
+    font-size: 1.3vw;
+    position: absolute;
+    background-color:red;
+    padding: 0.8vh 0.8vh;
+    border-radius: 0.3vw;
+    animation: 1s flicker infinite alternate;
+}
+@keyframes flicker{
+  0%{
+    background-color: #39b73e;
+  }
+  100%{
+    background-color: red;
+  }
+    }
+    
+  .ChildMarket .coins5{
+    margin-top: 112vh;
+    gap: 35vw;
+    position: absolute;
+    margin-left: 21.5vw;
+    }
+    .ChildMarket .pkr5{
+      margin-left: -41.4vw;
+      margin-top: 7vh;
+      color: gray;
+      font-size: 1vw;
+    }
+    .ChildMarket .dollar5{
+      margin-left: 3.4vw;
+    }
+    .ChildMarket .plus5{
+    margin-left: 61.7vw;
+    font-size: 1.3vw;
+    position: absolute;
+    background-color:#39b73e;
+    padding: 0.8vh 0.8vh;
+    border-radius: 0.3vw;
+    animation: 1s flicker infinite alternate;
+}
+@keyframes flicker{
+  0%{
+    background-color: #39b73e;
+  }
+  100%{
+    background-color: red;
+  }
+    }
+      
+  .ChildMarket .coins6{
+    margin-top: 127vh;
+    gap: 35vw;
+    position: absolute;
+    margin-left: 21.5vw;
+    }
+    .ChildMarket .pkr6{
+      margin-left: -41.4vw;
+      margin-top: 7vh;
+      color: gray;
+      font-size: 1vw;
+    }
+    .ChildMarket .dollar6{
+      margin-left: 2.5vw;
+    }
+    .ChildMarket .plus6{
+    margin-left: 62.6vw;
+    font-size: 1.3vw;
+    position: absolute;
+    background-color:red;
+    padding: 0.8vh 0.8vh;
+    border-radius: 0.3vw;
+    animation: 1s flicker infinite alternate;
+}
+@keyframes flicker{
+  0%{
+    background-color: #39b73e;
+  }
+  100%{
+    background-color: red;
+  }
+    }
+         
+  .ChildMarket .coins7{
+    margin-top: 142vh;
+    gap: 35vw;
+    position: absolute;
+    margin-left: 21.5vw;
+    }
+    .ChildMarket .pkr7{
+      margin-left: -41.4vw;
+      color: gray;
+      margin-top: 7vh;
+      font-size: 1vw;
+    }
+    .ChildMarket .dollar7{
+      margin-left: 4vw;
+    }
+    .ChildMarket .plus7{
+    margin-left: 63vw;
+    font-size: 1.3vw;
+    position: absolute;
+    background-color:#39b73e;
+    padding: 0.8vh 0.8vh;
+    border-radius: 0.3vw;
+    animation: 1s flicker infinite alternate;
+}
+@keyframes flicker{
+  0%{
+    background-color: #39b73e;
+  }
+  100%{
+    background-color: red;
+  }
+    }
+    
+  .ChildMarket .coins8{
+    margin-top: 157vh;
+    gap: 35vw;
+    position: absolute;
+    margin-left: 21.5vw;
+    }
+    .ChildMarket .pkr8{
+      margin-left: -38.4vw;
+      margin-top: 7vh;
+      color: gray;
+      font-size: 1vw;
+    }
+    .ChildMarket .dollar8{
+      margin-left: 6vw;
+    }
+    .ChildMarket .plus8{
+    margin-left: 62vw;
+    font-size: 1.3vw;
+    background-color:red;
+    padding: 0.8vh 0.8vh;
+    position:absolute;
+    border-radius: 0.3vw;
+    animation: 1s flicker infinite alternate;
+}
+@keyframes flicker{
+  0%{
+    background-color: #39b73e;
+  }
+  100%{
+    background-color: red;
+  }
+    }
+    .ParentMarket2{
+      width: 100%;
+      height: 137vh;
+      margin-top: 680vh;
+    }
+    .ChildMarket2{
+      width: 100%;
+      margin-top: -665vh;
+      height: 137vh;
+      color: black;
+      position: relative;
+      display: flex;
+    }
+    .ChildMarket2 ul{
+      display: flex;
+      justify-content: center;
+      font-size: 2vw;
+      margin-top: 10vh;
+      position: absolute;
+      margin-left: 37vw;
+      cursor: pointer;
+      gap: 2vw;
+      font-weight: 500;
+      align-items: center;
+      transition: 0.3s ease;
+    }
+    .ChildMarket2 .gainers{
+      border-bottom: 2px solid orangered;
+    }
+    .ChildMarket2 .hot:hover{
+      transform: translateY(-5px);
+    }
+    
+    .ChildMarket2 .gainers:hover{
+      border-bottom: 2px solid orangered;
+      transform: translateY(-5px);
+    }
+    
+    .ChildMarket2 .losers:hover{
+      border-bottom: 2px solid orangered;
+      transform: translateY(-5px);
+    }
+    
+    .ChildMarket2 .new:hover{
+      border-bottom: 2px solid orangered;
+      transform: translateY(-5px);
+    }
+    .ChildMarket2 .coins9{
+      margin-top: 35vh;
+      gap: 15vw;
+    }
+    .ChildMarket2 .coin9{
+      position: absolute;
+      margin-left: -24.5vw;
+    }
+    .dollar9{
+margin-left: 63vw;
+position: absolute;
+    }
+    .ChildMarket2 .pkr9{
+      position: absolute;
+      color: gray;
+      margin-left: 62vw;
+      margin-top: 7vh;
+      font-size: 1vw;
+    }
+    .ChildMarket2 .plus9{
+    margin-left:80.6vw;
+    position: absolute;
+    font-size: 1.3vw;
+    background-color: #39b73e;
+    padding: 0.8vh 0.8vh;
+    border-radius: 0.3vw;
+    }
+    .ChildMarket2 .coins10{
+    margin-top: 45vh;
+    gap: 35vw;
+    position: absolute;
+    margin-left: 21.8vw;
+    }
+    
+    .ChildMarket2 .pkr10{
+      margin-left: -40vw;
+      margin-top: 7vh;
+      color: gray;
+      font-size: 1vw;
+    }
+    .ChildMarket2 .dollar10{
+      margin-left: 5vw;
+    }
+    .ChildMarket2 .plus10{
+    margin-left: 62.5vw;
+    font-size: 1.3vw;
+    position: absolute;
+    background-color:#39b73e;
+    padding: 0.8vh 0.8vh;
+    border-radius: 0.3vw;
+    }
+    
+    .ChildMarket2 .coins11{
+      margin-top: 61vh;
+      gap: 35vw;
+      position: absolute;
+      margin-left: 21.8vw;
+      }
+      .ChildMarket2 .pkr11{
+        margin-left: -45.4vw;
+        color: gray;
+        margin-top: 7vh;
+        font-size: 1vw;
+      }
+      .ChildMarket2 .dollar11{
+        margin-left: 2vw;
+      }
+      .ChildMarket2 .plus11{
+      margin-left: 64.5vw;
+      font-size: 1.3vw;
+      position: absolute;
+      background-color:#39b73e;
+      padding: 0.8vh 0.8vh;
+      border-radius: 0.3vw;
+      }
+    
+      .ChildMarket2 .coins12{
+        margin-top: 76vh;
+        gap: 35vw;
+        position: absolute;
+        margin-left: 21.8vw;
+        }
+        .ChildMarket2 .pkr12{
+          margin-left: -41.4vw;
+          color: gray;
+          margin-top: 7vh;
+          font-size: 1vw;
+        }
+        .ChildMarket2 .dollar12{
+          margin-left: 3.7vw;
+        }
+        .ChildMarket2 .plus12{
+        margin-left: 61.6vw;
+        font-size: 1.3vw;
+        position: absolute;
+        background-color:#39b73e;
+        padding: 0.8vh 0.8vh;
+        border-radius: 0.3vw;
+        }
+        
+      .ChildMarket2 .coins13{
+        margin-top:90vh;
+        gap: 35vw;
+        position: absolute;
+        margin-left: 21.8vw;
+        }
+        .ChildMarket2 .pkr13{
+          margin-left: -41.4vw;
+          color: gray;
+          margin-top: 7vh;
+          font-size: 1vw;
+        }
+        .ChildMarket2 .dollar13{
+          margin-left: 3.5vw;
+        }
+        .ChildMarket2 .plus13{
+        margin-left: 61.7vw;
+        position: absolute;
+        font-size: 1.3vw;
+        background-color:#39b73e;
+        padding: 0.8vh 0.8vh;
+        border-radius: 0.3vw;
+        }
+          
+      .ChildMarket2 .coins14{
+        margin-top: 104vh;
+        gap: 35vw;
+        position: absolute;
+        margin-left: 21.8vw;
+        }
+        .ChildMarket2 .pkr14{
+          margin-left: -40vw;
+          color: gray;
+          margin-top: 7vh;
+          font-size: 1vw;
+        }
+        .ChildMarket2 .dollar14{
+          margin-left: 4.6vw;
+        }
+        .ChildMarket2 .plus14{
+        margin-left: 62vw;
+        font-size: 1.3vw;
+        position: absolute;
+        background-color:#39b73e;
+        padding: 0.8vh 0.8vh;
+        border-radius: 0.3vw;
+        }
+             
+      .ChildMarket2 .coins15{
+        margin-top: 118vh;
+        gap: 35vw;
+        position: absolute;
+        margin-left: 21.8vw;
+        }
+        .ChildMarket2 .pkr15{
+          margin-left: -41.4vw;
+          color: gray;
+          margin-top: 7vh;
+          font-size: 1vw;
+        }
+        .ChildMarket2 .dollar15{
+          margin-left: 4vw;
+        }
+        .ChildMarket2 .plus15{
+        margin-left: 63.5vw;
+        font-size: 1.3vw;
+        position: absolute;
+        background-color:#39b73e;
+        padding: 0.8vh 0.8vh;
+        border-radius: 0.3vw;
+        }
+        
+      .ChildMarket2 .coins16{
+        margin-top: 131vh;
+        gap: 35vw;
+        position: absolute;
+        margin-left: 21.8vw;
+        }
+        .ChildMarket2 .pkr16{
+          margin-left: -41.4vw;
+          color: gray;
+          margin-top: 7vh;
+          font-size: 1vw;
+        }
+        .ChildMarket2 .dollar16{
+          margin-left: 2.5vw;
+        }
+        .ChildMarket2 .plus16{
+        margin-left: 63vw;
+        font-size: 1.3vw;
+        position: absolute;
+        background-color:#39b73e;
+        padding: 0.8vh 0.8vh;
+        border-radius: 0.3vw;
+        }
+        .ParentMarket3{
+          width: 100%;
+          height: 125vh;
+          margin-top: 50vh;
+        }
+        .ChildMarket3{
+          width: 100%;
+          margin-top: -10vh;
+          height: 125vh;
+          color: black;
+          position: relative;
+          display: flex;
+        }
+        .ChildMarket3 ul{
+          display: flex;
+          justify-content: center;
+          font-size: 2vw;
+          margin-top: -15vh;
+          position: absolute;
+          margin-left: 37vw;
+          cursor: pointer;
+          gap: 2vw;
+          font-weight: 500;
+          align-items: center;
+          transition: 0.3s ease;
+        }
+        .ChildMarket3 .losers{
+          border-bottom: 2px solid orangered;
+        }
+        .ChildMarket3 .hot:hover{
+          transform: translateY(-5px);
+        }
+        
+        .ChildMarket3 .gainers:hover{
+          border-bottom: 2px solid orangered;
+          transform: translateY(-5px);
+        }
+        
+        .ChildMarket3 .losers:hover{
+          border-bottom: 2px solid orangered;
+          transform: translateY(-5px);
+        }
+        
+        .ChildMarket3 .new:hover{
+          border-bottom: 2px solid orangered;
+          transform: translateY(-5px);
+        }
+        .ChildMarket3 .coins17{
+          margin-top: 35vh;
+          gap: 15vw;
+        }
+        .ChildMarket3 .coin17{
+          position: absolute;
+          margin-top: -40vh;
+          margin-left: -22.5vw;
+        }
+        .dollar17{
+          margin-top: -40vh;
+    margin-left: 68vw;
+    position: absolute;
+        }
+        .ChildMarket3 .pkr17{
+          position: absolute;
+          color: gray;
+          margin-left: 67vw;
+          margin-top: -34vh;
+          font-size: 1vw;
+        }
+        .ChildMarket3 .plus17{
+        margin-left:83.6vw;
+        position: absolute;
+        font-size: 1.3vw;
+        margin-top: -40vh;
+        background-color: red;
+        padding: 0.8vh 0.8vh;
+        border-radius: 0.3vw;
+        }
+        .ChildMarket3 .coins18{
+        margin-top: 22vh;
+        gap: 35vw;
+        position: absolute;
+        margin-left: 23.2vw;
+        }
+        
+        .ChildMarket3 .pkr18{
+          margin-left: -42vw;
+          color: gray;
+          margin-top: 7vh;
+          font-size: 1vw;
+        }
+        .ChildMarket3 .dollar18{
+          margin-left: 3vw;
+        }
+        .ChildMarket3 .plus18{
+        margin-left: 61vw;
+        font-size: 1.3vw;
+        position: absolute;
+        background-color:red;
+        padding: 0.8vh 0.8vh;
+        border-radius: 0.3vw;
+        }
+        
+        .ChildMarket3 .coins19{
+          margin-top:35vh;
+          gap: 35vw;
+          position: absolute;
+          margin-left: 23.2vw;
+          }
+          .ChildMarket3 .pkr19{
+            margin-left: -41.4vw;
+            color: gray;
+            margin-top: 7vh;
+            font-size: 1vw;
+          }
+          .ChildMarket3 .dollar19{
+            margin-left: 2vw;
+          }
+          .ChildMarket3 .plus19{
+          margin-left: 61.2vw;
+          font-size: 1.3vw;
+          position: absolute;
+          background-color:red;
+          padding: 0.8vh 0.8vh;
+          border-radius: 0.3vw;
+          }
+        
+          .ChildMarket3 .coins20{
+            margin-top: 48vh;
+            gap: 35vw;
+            position: absolute;
+            margin-left: 23.2vw;
+            }
+            .ChildMarket3 .pkr20{
+              margin-left: -41.4vw;
+              margin-top: 7vh;
+              color: gray;
+              font-size: 1vw;
+            }
+            .ChildMarket3 .dollar20{
+              margin-left: 4.6vw;
+            }
+            .ChildMarket3 .plus20{
+            margin-left: 61.2vw;
+            font-size: 1.3vw;
+            position: absolute;
+            background-color:red;
+            padding: 0.8vh 0.8vh;
+            border-radius: 0.3vw;
+            }
+            
+          .ChildMarket3 .coins21{
+            margin-top:61vh;
+            gap: 35vw;
+            position: absolute;
+            margin-left: 23.2vw;
+            }
+            .ChildMarket3 .pkr21{
+              margin-left: -41.4vw;
+              color: gray;
+              margin-top: 7vh;
+              font-size: 1vw;
+            }
+            .ChildMarket3 .dollar21{
+              margin-left: 3.5vw;
+            }
+            .ChildMarket3 .plus21{
+            margin-left: 61.7vw;
+            position: absolute;
+            font-size: 1.3vw;
+            background-color:red;
+            padding: 0.8vh 0.8vh;
+            border-radius: 0.3vw;
+            }
+              
+          .ChildMarket3 .coins22{
+            margin-top: 74vh;
+            gap: 35vw;
+            position: absolute;
+            margin-left: 23.2vw;
+            }
+            .ChildMarket3 .pkr22{
+              margin-left: -39.4vw;
+              color: gray;
+              margin-top: 7vh;
+              font-size: 1vw;
+            }
+            .ChildMarket3 .dollar22{
+              margin-left: 4vw;
+            }
+            .ChildMarket3 .plus22{
+            margin-left: 62vw;
+            font-size: 1.3vw;
+            position: absolute;
+            background-color:red;
+            padding: 0.8vh 0.8vh;
+            border-radius: 0.3vw;
+            }
+                 
+          .ChildMarket3 .coins23{
+            margin-top: 87vh;
+            gap: 35vw;
+            position: absolute;
+            margin-left:23.2vw;
+            }
+            .ChildMarket3 .pkr23{
+              margin-left: -41.4vw;
+              color: gray;
+              margin-top: 7vh;
+              font-size: 1vw;
+            }
+            .ChildMarket3 .dollar23{
+              margin-left: 4.5vw;
+            }
+            .ChildMarket3 .plus23{
+            margin-left: 61.3vw;
+            font-size: 1.3vw;
+            position: absolute;
+            background-color:red;
+            padding: 0.8vh 0.8vh;
+            border-radius: 0.3vw;
+            }
+            .ChildMarket3 .coins24{
+              margin-top: 100vh;
+              gap: 35vw;
+              position: absolute;
+              margin-left:23.2vw;
+              }
+              .ChildMarket3 .pkr24{
+                margin-left: -41.4vw;
+                color: gray;
+                margin-top: 7vh;
+                font-size: 1vw;
+              }
+              .ChildMarket3 .dollar24{
+                margin-left: 2.3vw;
+              }
+              .ChildMarket3 .plus24{
+              margin-left: 63.5vw;
+              font-size: 1.3vw;
+              position: absolute;
+              background-color:red;
+              padding: 0.8vh 0.8vh;
+              border-radius: 0.3vw;
+              }
+              
+        .ParentMarket4{
+          width: 100%;
+          height: 125vh;
+          margin-top: 80vh;
+        }
+        .ChildMarket4{
+          width: 100%;
+          height: 125vh;
+          color: black;
+          margin-top: -50vh;
+          position: relative;
+          display: flex;
+        }
+        .ChildMarket4 ul{
+          display: flex;
+          justify-content: center;
+          font-size: 2vw;
+          margin-top: -15vh;
+          position: absolute;
+          margin-left: 37vw;
+          cursor: pointer;
+          gap: 2vw;
+          font-weight: 500;
+          align-items: center;
+          transition: 0.3s ease;
+        }
+        .ChildMarket4 .new{
+          border-bottom: 2px solid orangered;
+        }
+        .ChildMarket4 .hot:hover{
+          transform: translateY(-5px);
+        }
+        
+        .ChildMarket4 .gainers:hover{
+          border-bottom: 2px solid orangered;
+          transform: translateY(-5px);
+        }
+        
+        .ChildMarket4 .losers:hover{
+          border-bottom: 2px solid orangered;
+          transform: translateY(-5px);
+        }
+        
+        .ChildMarket4 .new:hover{
+          border-bottom: 2px solid orangered;
+          transform: translateY(-5px);
+        }
+        .ChildMarket4 .coins25{
+          margin-top: 35vh;
+          gap: 15vw;
+        }
+        .ChildMarket4 .coin25{
+          position: absolute;
+          margin-top: -40vh;
+          margin-left: -22.5vw;
+        }
+        .dollar25{
+          margin-top: -40vh;
+    margin-left: 68vw;
+    position: absolute;
+        }
+        .ChildMarket4 .pkr25{
+          position: absolute;
+          color: gray;
+          margin-left: 67vw;
+          margin-top: -34vh;
+          font-size: 1vw;
+        }
+        .ChildMarket4 .plus25{
+        margin-left:83.6vw;
+        position: absolute;
+        font-size: 1.3vw;
+        margin-top: -40vh;
+        background-color: red;
+        padding: 0.8vh 0.8vh;
+        border-radius: 0.3vw;
+        animation: 1s flicker infinite alternate;
+}
+@keyframes flicker{
+  0%{
+    background-color: #39b73e;
+  }
+  100%{
+    background-color: red;
+  }
+        }
+        .ChildMarket4 .coins26{
+        margin-top: 22vh;
+        gap: 35vw;
+        position: absolute;
+        margin-left: 23.2vw;
+        }
+        
+        .ChildMarket4 .pkr26{
+          margin-left: -42vw;
+          color: gray;
+          margin-top: 7vh;
+          font-size: 1vw;
+        }
+        .ChildMarket4 .dollar26{
+          margin-left: 3vw;
+        }
+        .ChildMarket4 .plus26{
+        margin-left: 61vw;
+        font-size: 1.3vw;
+        position: absolute;
+        background-color:red;
+        padding: 0.8vh 0.8vh;
+        border-radius: 0.3vw;
+        animation: 1s flicker infinite alternate;
+}
+@keyframes flicker{
+  0%{
+    background-color: #39b73e;
+  }
+  100%{
+    background-color: red;
+  }
+        }
+        
+        .ChildMarket4 .coins27{
+          margin-top:35vh;
+          gap: 35vw;
+          position: absolute;
+          margin-left: 23.2vw;
+          }
+          .ChildMarket4 .pkr27{
+            margin-left: -43.4vw;
+            margin-top: 7vh;
+            color: gray;
+            font-size: 1vw;
+          }
+          .ChildMarket4 .dollar27{
+            margin-left: 3vw;
+          }
+          .ChildMarket4 .plus27{
+          margin-left: 62.5vw;
+          font-size: 1.3vw;
+          position: absolute;
+          background-color:red;
+          padding: 0.8vh 0.8vh;
+          border-radius: 0.3vw;
+          animation: 1s flicker infinite alternate;
+}
+@keyframes flicker{
+  0%{
+    background-color: #39b73e;
+  }
+  100%{
+    background-color: red;
+  }
+          }
+        
+          .ChildMarket4 .coins28{
+            margin-top: 48vh;
+            gap: 35vw;
+            position: absolute;
+            margin-left: 23.2vw;
+            }
+            .ChildMarket4 .pkr28{
+              margin-left: -41.4vw;
+              color: gray;
+              margin-top: 7vh;
+              font-size: 1vw;
+            }
+            .ChildMarket4 .dollar28{
+              margin-left: 4.6vw;
+            }
+            .ChildMarket4 .plus28{
+            margin-left: 61.2vw;
+            font-size: 1.3vw;
+            position: absolute;
+            background-color:red;
+            padding: 0.8vh 0.8vh;
+            border-radius: 0.3vw;
+            animation: 1s flicker infinite alternate;
+}
+@keyframes flicker{
+  0%{
+    background-color: #39b73e;
+  }
+  100%{
+    background-color: red;
+  }
+            }
+            
+          .ChildMarket4 .coins29{
+            margin-top:61vh;
+            gap: 35vw;
+            position: absolute;
+            margin-left: 23.2vw;
+            }
+            .ChildMarket4 .pkr29{
+              margin-left: -41.4vw;
+              color: gray;
+              margin-top: 7vh;
+              font-size: 1vw;
+            }
+            .ChildMarket4 .dollar29{
+              margin-left: 3.5vw;
+            }
+            .ChildMarket4 .plus29{
+            margin-left: 61.7vw;
+            position: absolute;
+            font-size: 1.3vw;
+            background-color:red;
+            padding: 0.8vh 0.8vh;
+            border-radius: 0.3vw;
+            animation: 1s flicker infinite alternate;
+}
+@keyframes flicker{
+  0%{
+    background-color: #39b73e;
+  }
+  100%{
+    background-color: red;
+  }
+            }
+              
+          .ChildMarket4 .coins30{
+            margin-top: 74vh;
+            gap: 35vw;
+            position: absolute;
+            margin-left: 23.2vw;
+            }
+            .ChildMarket4 .pkr30{
+              margin-left: -39.4vw;
+              color: gray;
+              margin-top: 7vh;
+              font-size: 1vw;
+            }
+            .ChildMarket4 .dollar30{
+              margin-left: 4vw;
+            }
+            .ChildMarket4 .plus30{
+            margin-left: 62vw;
+            font-size: 1.3vw;
+            position: absolute;
+            background-color:red;
+            padding: 0.8vh 0.8vh;
+            border-radius: 0.3vw;
+            animation: 1s flicker infinite alternate;
+}
+@keyframes flicker{
+  0%{
+    background-color: #39b73e;
+  }
+  100%{
+    background-color: red;
+  }
+            }
+                 
+          .ChildMarket4 .coins31{
+            margin-top: 87vh;
+            gap: 35vw;
+            position: absolute;
+            margin-left:23.2vw;
+            }
+            .ChildMarket4 .pkr31{
+              margin-left: -41.4vw;
+              color: gray;
+              margin-top: 7vh;
+              font-size: 1vw;
+            }
+            .ChildMarket4 .dollar31{
+              margin-left: 4.5vw;
+            }
+            .ChildMarket4 .plus31{
+            margin-left: 61.3vw;
+            font-size: 1.3vw;
+            position: absolute;
+            background-color:red;
+            padding: 0.8vh 0.8vh;
+            border-radius: 0.3vw;
+            animation: 1s flicker infinite alternate;
+}
+@keyframes flicker{
+  0%{
+    background-color: #39b73e;
+  }
+  100%{
+    background-color: red;
+  }
+            }
+            .ChildMarket4 .coins32{
+              margin-top: 100vh;
+              gap: 35vw;
+              position: absolute;
+              margin-left:23.2vw;
+              }
+              .ChildMarket4 .pkr32{
+                margin-left: -41.4vw;
+                color: gray;
+                margin-top: 7vh;
+                font-size: 1vw;
+              }
+              .ChildMarket4 .dollar32{
+                margin-left: 2.3vw;
+              }
+              .ChildMarket4 .plus32{
+              margin-left: 63.5vw;
+              font-size: 1.3vw;
+              position: absolute;
+              background-color:red;
+              padding: 0.8vh 0.8vh;
+              border-radius: 0.3vw;
+              animation: 1s flicker infinite alternate;
+}
+@keyframes flicker{
+  0%{
+    background-color: #39b73e;
+  }
+  100%{
+    background-color: red;
+  }
+              }
+              .ChildMarket4 .coins33{
+                margin-top: 113vh;
+                gap: 35vw;
+                position: absolute;
+                margin-left:23.2vw;
+                }
+                .ChildMarket4 .pkr33{
+                  margin-left: -41.4vw;
+                  color: gray;
+                  margin-top: 7vh;
+                  font-size: 1vw;
+                }
+                .ChildMarket4 .dollar33{
+                  margin-left: 6vw;
+                }
+                .ChildMarket4 .plus33{
+                margin-left: 64vw;
+                font-size: 1.3vw;
+                position: absolute;
+                background-color:red;
+                padding: 0.8vh 0.8vh;
+                border-radius: 0.3vw;
+                animation: 1s flicker infinite alternate;
+}
+@keyframes flicker{
+  0%{
+    background-color: #39b73e;
+  }
+  100%{
+    background-color: red;
+  }
+                }
+.FooterParent{
+  width:100%;
+  background-color:black;
+  height:10%;
+}
+.FooterChild{
+  display:flex;
+  height:10%;
+  color:white;
+  padding-top:10px;
+  margin-left:1vw;
+  justify-content:center;
+  font-size:10px;
+}
+@media (max-width:480px){
+  .ChildHeader{
+    display: none;
+  }
+  .menu{
+    display: inline;
+    margin-top: 2.5vh;
+    padding-bottom: 2vh;
+    font-size: 7vw;
+    color: white;
+    margin-left: 85vw;
+  }
+  .ParentHeader{
+    height: 15%;
+  }
+  .Child{
+    display: flex;
+  }
+  .bitcoinimg{
+    width: 100%;
+    height: 700px;
+    display: inline;
+  }
+ .Child .headingmain{
+  position: absolute;
+  margin-left: 16vw;
+     width: 60vw;
+     margin-top: 440px;
+     font-size: 25px;
+  }
+  .mobileimg{
+    width: 80vw;
+    margin-left: -86vw;
+    margin-top: 0vh;
+    height: 420px;
+  }
+  .Child .paragraph{
+    margin-top: 590px;
+    font-size: 10px;
+    margin-left: 16vw;
+    width: 80vw;
+  }
+  .Child .Explore{
+    font-size: 10px;
+    padding: 0;
+       margin-left: 16vw;
+       width: 20vw;
+       padding: 1vh 1vh;
+       border-radius: 0.5vw;
+position: absolute;
+      margin-top: 640px;      
+  }
+  .ChildMarket .input1{
+position: absolute;
+margin-left: 3vw;
+margin-top: 24px;
+padding-left: 7vw;
+height:35px;
+  }
+  .ChildMarket .icon{
+position: absolute;
+margin-left: -50vw;
+margin-top: 35px;
+height: 15px;
+font-size: 22px;
+  }
+  .ParentMarket{
+width: 100%;
+height: 300px;
+  }
+  .ChildMarket{
+    margin-top: 300px;
+    display: flex;
+    justify-content:space-around;
+    height:100%;                                  
+    position:relative;
+    flex-wrap: wrap;
+  }
+  .ChildMarket .coins{
+    margin-top: 240px;
+    font-size: 20px;
+    margin-left: 5vw;
+    width: 48vw;
+  }
+  .ChildMarket .coin1{
+    margin-top: -18vh;
+    margin-left: -85vw;
+  position:absolute;
+  }
+  .ChildMarket .dollar1{
+    margin-top: -18vh;
+    margin-left: 20vw;
+    position: absolute;
+    font-size: 17px;
+  }
+  .ChildMarket .plus1{
+    margin-top: -18vh;
+    margin-left:75vw;
+    position: absolute;
+    font-size: 13px;
+  }
+  .ChildMarket .pkr1{
+    position: absolute;
+    margin-left: 20vw;
+    font-size: 10px;
+    margin-top: -12vh;
+  }
+  .ChildMarket ul{
+margin-top:60px;
+font-size: 20px;
+margin-left: 3vw;
+width: 48vw;
+  }
+  
+  .ChildMarket .coins2{
+    margin-top: 300px;
+    font-size: 20px;
+    margin-left: 5vw;
+    width: 48vw;
+  }
+  .ChildMarket .coin2{
+    margin-top: -18vh;
+    margin-left: -84vw;
+  position:absolute;
+  }
+  .ChildMarket .dollar2{
+    margin-top: -18vh;
+    margin-left: 20vw;
+    position: absolute;
+    font-size: 17px;
+  }
+  .ChildMarket .plus2{
+    margin-top: -18vh;
+    margin-left:75vw;
+    position: absolute;
+    font-size: 13px;
+  }
+  .ChildMarket .pkr2{
+    position: absolute;
+    margin-left: 20vw;
+    font-size: 10px;
+    margin-top: -12vh;
+  }
+   
+  .ChildMarket .coins3{
+    margin-top: 360px;
+    font-size: 20px;
+    margin-left: 5vw;
+    width: 48vw;
+  }
+  .ChildMarket .coin3{
+    margin-top: -18vh;
+    margin-left: -85vw;
+  position:absolute;
+  }
+  .ChildMarket .dollar3{
+    margin-top: -18vh;
+    margin-left: 20vw;
+    position: absolute;
+    font-size: 17px;
+  }
+  .ChildMarket .plus3{
+    margin-top: -18vh;
+    margin-left:75vw;
+    position: absolute;
+    font-size: 13px;
+  }
+  .ChildMarket .pkr3{
+    position: absolute;
+    margin-left: 20vw;
+    font-size: 10px;
+    margin-top: -12vh;
+  }
+   
+  .ChildMarket .coins4{
+    margin-top: 420px;
+    font-size: 20px;
+    margin-left: 8vw;
+    width: 48vw;
+  }
+  .ChildMarket .coin4{
+    margin-top: -18vh;
+    margin-left: -85vw;
+  position:absolute;
+  }
+  .ChildMarket .dollar4{
+    margin-top: -18vh;
+    margin-left: 20vw;
+    position: absolute;
+    font-size: 17px;
+  }
+  .ChildMarket .plus4{
+    margin-top: -18vh;
+    margin-left:71vw;
+    position: absolute;
+    font-size: 13px;
+  }
+  .ChildMarket .pkr4{
+    position: absolute;
+    margin-left: 20vw;
+    font-size: 10px;
+    margin-top: -12vh;
+  }
+   
+  .ChildMarket .coins5{
+    margin-top: 480px;
+    font-size: 20px;
+    margin-left: 5vw;
+    width: 48vw;
+  }
+  .ChildMarket .coin5{
+    margin-top: -18vh;
+    margin-left: -85vw;
+  position:absolute;
+  }
+  .ChildMarket .dollar5{
+    margin-top: -18vh;
+    margin-left: 20vw;
+    position: absolute;
+    font-size: 17px;
+  }
+  .ChildMarket .plus5{
+    margin-top: -18vh;
+    margin-left:75vw;
+    position: absolute;
+    font-size: 13px;
+  }
+  .ChildMarket .pkr5{
+    position: absolute;
+    margin-left: 20vw;
+    font-size: 10px;
+    margin-top: -12vh;
+  }
+   
+  .ChildMarket .coins6{
+    margin-top:540px;
+    font-size: 20px;
+    margin-left: 5vw;
+    width: 48vw;
+  }
+  .ChildMarket .coin6{
+    margin-top: -18vh;
+    margin-left: -81vw;
+  position:absolute;
+  }
+  .ChildMarket .dollar6{
+    margin-top: -18vh;
+    margin-left: 20vw;
+    position: absolute;
+    font-size: 17px;
+  }
+  .ChildMarket .plus6{
+    margin-top: -18vh;
+    margin-left:75vw;
+    position: absolute;
+    font-size: 13px;
+  }
+  .ChildMarket .pkr6{
+    position: absolute;
+    margin-left: 20vw;
+    font-size: 10px;
+    margin-top: -12vh;
+  }
+   
+  .ChildMarket .coins7{
+    margin-top: 600px;
+    font-size: 20px;
+    margin-left: 5vw;
+    width: 48vw;
+  }
+  .ChildMarket .coin7{
+    margin-top: -18vh;
+    margin-left: -85vw;
+  position:absolute;
+  }
+  .ChildMarket .dollar7{
+    margin-top: -18vh;
+    margin-left: 20vw;
+    position: absolute;
+    font-size: 17px;
+  }
+  .ChildMarket .plus7{
+    margin-top: -18vh;
+    margin-left:75vw;
+    position: absolute;
+    font-size: 13px;
+  }
+  .ChildMarket .pkr7{
+    position: absolute;
+    margin-left: 20vw;
+    font-size: 10px;
+    margin-top: -12vh;
+  }
+   
+  .ChildMarket .coins8{
+    margin-top: 660px;
+    font-size: 20px;
+    margin-left: 5vw;
+    width: 48vw;
+  }
+  .ChildMarket .coin8{
+    margin-top: -18vh;
+    margin-left: -83vw;
+  position:absolute;
+  }
+  .ChildMarket .dollar8{
+    margin-top: -18vh;
+    margin-left: 20vw;
+    position: absolute;
+    font-size: 17px;
+  }
+  .ChildMarket .plus8{
+    margin-top: -18vh;
+    margin-left:75vw;
+    position: absolute;
+    font-size: 13px;
+  }
+  .ChildMarket .pkr8{
+    position: absolute;
+    margin-left: 20vw;
+    font-size: 10px;
+    margin-top: -12vh;
+  }
+  .ParentMarket2{
+    width: 100%;
+    height: 500px;
+      }
+      .ChildMarket2{ 
+        display: flex;
+        position:relative;
+        justify-content:space-around;
+        height:100%;   
+      }
+      .ChildMarket2 .coins9{
+        margin-top:470px ;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket2 .coin9{
+        margin-top: -18vh;
+        margin-left: -83vw;
+      position:absolute;
+      }
+      .ChildMarket2 .dollar9{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket2 .plus9{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket2 .pkr9{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+      .ChildMarket2 ul{      
+      margin-top:300px;
+      font-size: 20px;
+      margin-left: 3vw;
+      width: 48vw;
+      }
+      
+  .ChildMarket2 .coins10{
+    margin-top: 530px;
+    font-size: 20px;
+    margin-left: 5vw;
+    width: 48vw;
+  }
+  .ChildMarket2 .coin10{
+    margin-top: -18vh;
+    margin-left: -85vw;
+  position:absolute;
+  }
+  .ChildMarket2 .dollar10{
+    margin-top: -18vh;
+    margin-left: 20vw;
+    position: absolute;
+    font-size: 17px;
+  }
+  .ChildMarket2 .plus10{
+    margin-top: -18vh;
+    margin-left:75vw;
+    position: absolute;
+    font-size: 13px;
+  }
+  .ChildMarket2 .pkr10{
+    position: absolute;
+    margin-left: 20vw;
+    font-size: 10px;
+    margin-top: -12vh;
+  }
+   
+  .ChildMarket2 .coins11{
+    margin-top: 590px;
+    font-size: 20px;
+    margin-left: 5vw;
+    width: 48vw;
+  }
+  .ChildMarket2 .coin11{
+    margin-top: -18vh;
+    margin-left: -85vw;
+  position:absolute;
+  }
+  .ChildMarket2 .dollar11{
+    margin-top: -18vh;
+    margin-left: 20vw;
+    position: absolute;
+    font-size: 17px;
+  }
+  .ChildMarket2 .plus11{
+    margin-top: -18vh;
+    margin-left:75vw;
+    position: absolute;
+    font-size: 13px;
+  }
+  .ChildMarket2 .pkr11{
+    position: absolute;
+    margin-left: 20vw;
+    font-size: 10px;
+    margin-top: -12vh;
+  }
+   
+  .ChildMarket2 .coins12{
+    margin-top: 650px;
+    font-size: 20px;
+    margin-left: 8vw;
+    width: 48vw;
+  }
+  .ChildMarket2 .coin12{
+    margin-top: -18vh;
+    margin-left: -89vw;
+  position:absolute;
+  }
+  .ChildMarket2 .dollar12{
+    margin-top: -18vh;
+    margin-left: 20vw;
+    position: absolute;
+    font-size: 17px;
+  }
+  .ChildMarket2 .plus12{
+    margin-top: -18vh;
+    margin-left:71vw;
+    position: absolute;
+    font-size: 13px;
+  }
+  .ChildMarket2 .pkr12{
+    position: absolute;
+    margin-left: 20vw;
+    font-size: 10px;
+    margin-top: -12vh;
+  }
+   
+  .ChildMarket2 .coins13{
+    margin-top: 710px;
+    font-size: 20px;
+    margin-left: 5vw;
+    width: 48vw;
+  }
+  .ChildMarket2 .coin13{
+    margin-top: -18vh;
+    margin-left: -83vw;
+  position:absolute;
+  }
+  .ChildMarket2 .dollar13{
+    margin-top: -18vh;
+    margin-left: 20vw;
+    position: absolute;
+    font-size: 17px;
+  }
+  .ChildMarket2 .plus13{
+    margin-top: -18vh;
+    margin-left:75vw;
+    position: absolute;
+    font-size: 13px;
+  }
+  .ChildMarket2 .pkr13{
+    position: absolute;
+    margin-left: 20vw;
+    font-size: 10px;
+    margin-top: -12vh;
+  }
+   
+  .ChildMarket2 .coins14{
+    margin-top: 770px;
+    font-size: 20px;
+    margin-left: 5vw;
+    width: 48vw;
+  }
+  .ChildMarket2 .coin14{
+    margin-top: -18vh;
+    margin-left: -83vw;
+  position:absolute;
+  }
+  .ChildMarket2 .dollar14{
+    margin-top: -18vh;
+    margin-left: 20vw;
+    position: absolute;
+    font-size: 17px;
+  }
+  .ChildMarket2 .plus14{
+    margin-top: -18vh;
+    margin-left:75vw;
+    position: absolute;
+    font-size: 13px;
+  }
+  .ChildMarket2 .pkr14{
+    position: absolute;
+    margin-left: 20vw;
+    font-size: 10px;
+    margin-top: -12vh;
+  }
+   
+  .ChildMarket2 .coins15{
+    margin-top: 830px;
+    font-size: 20px;
+    margin-left: 5vw;
+    width: 48vw;
+  }
+  .ChildMarket2 .coin15{
+    margin-top: -18vh;
+    margin-left: -83vw;
+  position:absolute;
+  }
+  .ChildMarket2 .dollar15{
+    margin-top: -18vh;
+    margin-left: 20vw;
+    position: absolute;
+    font-size: 17px;
+  }
+  .ChildMarket2 .plus15{
+    margin-top: -18vh;
+    margin-left:75vw;
+    position: absolute;
+    font-size: 13px;
+  }
+  .ChildMarket2 .pkr15{
+    position: absolute;
+    margin-left: 20vw;
+    font-size: 10px;
+    margin-top: -12vh;
+  }
+   
+  .ChildMarket2 .coins16{
+    margin-top: 890px;
+    font-size: 20px;
+    margin-left: 5vw;
+    width: 48vw;
+  }
+  .ChildMarket2 .coin16{
+    margin-top: -18vh;
+    margin-left: -80vw;
+  position:absolute;
+  }
+  .ChildMarket2 .dollar16{
+    margin-top: -18vh;
+    margin-left: 20vw;
+    position: absolute;
+    font-size: 17px;
+  }
+  .ChildMarket2 .plus16{
+    margin-top: -18vh;
+    margin-left:75vw;
+    position: absolute;
+    font-size: 13px;
+  }
+  .ChildMarket2 .pkr16{
+    position: absolute;
+    margin-left: 20vw;
+    font-size: 10px;
+    margin-top: -12vh;
+  }
+  
+  .ParentMarket3{
+    width: 100%;
+    height: 10px;
+      }
+      .ChildMarket3{
+        display: flex;
+        justify-content:space-around;
+        height:100%;
+        position:relative;
+      }
+      .ChildMarket3 .coins17{
+        margin-top: 365px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket3 .coin17{
+        margin-top: -18vh;
+        margin-left: -79vw;
+      position:absolute;
+      }
+      .ChildMarket3 .dollar17{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket3 .plus17{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket3 .pkr17{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+      .ChildMarket3 ul{
+    margin-top:200px;
+    font-size: 20px;
+    margin-left: 3vw;
+    width: 48vw;
+      }
+      
+      .ChildMarket3 .coins18{
+        margin-top: 425px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket3 .coin18{
+        margin-top: -18vh;
+        margin-left: -82vw;
+      position:absolute;
+      }
+      .ChildMarket3 .dollar18{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket3 .plus18{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket3 .pkr18{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket3 .coins19{
+        margin-top: 485px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket3 .coin19{
+        margin-top: -18vh;
+        margin-left: -82vw;
+      position:absolute;
+      }
+      .ChildMarket3 .dollar19{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket3 .plus19{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket3 .pkr19{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket3 .coins20{
+        margin-top: 545px;
+        font-size: 20px;
+        margin-left: 9vw;
+        width: 48vw;
+      }
+      .ChildMarket3 .coin20{
+        margin-top: -18vh;
+        margin-left: -87vw;
+      position:absolute;
+      }
+      .ChildMarket3 .dollar20{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket3 .plus20{
+        margin-top: -18vh;
+        margin-left:71vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket3 .pkr20{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket3 .coins21{
+        margin-top: 605px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket3 .coin21{
+        margin-top: -18vh;
+        margin-left: -81vw;
+      position:absolute;
+      }
+      .ChildMarket3 .dollar21{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket3 .plus21{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket3 .pkr21{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket3 .coins22{
+        margin-top: 665px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket3 .coin22{
+        margin-top: -18vh;
+        margin-left: -81vw;
+      position:absolute;
+      }
+      .ChildMarket3 .dollar22{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket3 .plus22{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket3 .pkr22{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket3 .coins23{
+        margin-top: 725px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket3 .coin23{
+        margin-top: -18vh;
+        margin-left: -81vw;
+      position:absolute;
+      }
+      .ChildMarket3 .dollar23{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket3 .plus23{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket3 .pkr23{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket3 .coins24{
+        margin-top: 785px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket3 .coin24{
+        margin-top: -18vh;
+        margin-left: -77vw;
+      position:absolute;
+      }
+      .ChildMarket3 .dollar24{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket3 .plus24{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket3 .pkr24{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+   
+      .ParentMarket4{
+        width: 100%;
+        height: 1550px;
+          }
+          .ChildMarket4{
+                display: flex;
+                justify-content:space-around;
+                height:100%;
+                position:relative;
+          }
+          .ChildMarket4 .coins25{
+            display:none;
+            margin-top: -805vh;
+            font-size: 20px;
+            margin-left: 28vw;
+            width: 48vw;
+          }
+          .ChildMarket4 .coin25{
+            margin-top: -18vh;
+            margin-left: -79.5vw;
+          position:absolute;
+          }
+          .ChildMarket4 .dollar25{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 17px;
+          }
+          .ChildMarket4 .plus25{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket4 .pkr25{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+          .ChildMarket4 ul{
+        margin-top:640px;
+        font-size: 20px;
+        margin-left: 3vw;
+        width: 48vw;
+          }
+          
+          .ChildMarket4 .coins26{
+            margin-top: 790px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket4 .coin26{
+            margin-top: -18vh;
+            margin-left: -81vw;
+          position:absolute;
+          }
+          .ChildMarket4 .dollar26{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 17px;
+          }
+          .ChildMarket4 .plus26{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket4 .pkr26{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+           
+          .ChildMarket4 .coins27{
+            margin-top: 850px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket4 .coin27{
+            margin-top: -18vh;
+            margin-left: -82vw;
+          position:absolute;
+          }
+          .ChildMarket4 .dollar27{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 17px;
+          }
+          .ChildMarket4 .plus27{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket4 .pkr27{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+           
+          .ChildMarket4 .coins28{
+            margin-top: 910px;
+            font-size: 20px;
+            margin-left: 8vw;
+            width: 48vw;
+          }
+          .ChildMarket4 .coin28{
+            margin-top: -18vh;
+            margin-left: -86vw;
+          position:absolute;
+          }
+          .ChildMarket4 .dollar28{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 17px;
+          }
+          .ChildMarket4 .plus28{
+            margin-top: -18vh;
+            margin-left:71vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket4 .pkr28{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+           
+          .ChildMarket4 .coins29{
+            margin-top: 970px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket4 .coin29{
+            margin-top: -18vh;
+            margin-left: -80vw;
+          position:absolute;
+          }
+          .ChildMarket4 .dollar29{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 17px;
+          }
+          .ChildMarket4 .plus29{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket4 .pkr29{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+           
+          .ChildMarket4 .coins30{
+            margin-top: 1030px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket4 .coin30{
+            margin-top: -18vh;
+            margin-left: -79vw;
+          position:absolute;
+          }
+          .ChildMarket4 .dollar30{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 17px;
+          }
+          .ChildMarket4 .plus30{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket4 .pkr30{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+           
+          .ChildMarket4 .coins31{
+            margin-top: 1090px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket4 .coin31{
+            margin-top: -18vh;
+            margin-left: -79vw;
+          position:absolute;
+          }
+          .ChildMarket4 .dollar31{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 17px;
+          }
+          .ChildMarket4 .plus31{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket4 .pkr31{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+           
+          .ChildMarket4 .coins32{
+            margin-top: 1150px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket4 .coin32{
+            margin-top: -18vh;
+            margin-left: -76vw;
+          position:absolute;
+          }
+          .ChildMarket4 .dollar32{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 17px;
+          }
+          .ChildMarket4 .plus32{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket4 .pkr32{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+             
+          .ChildMarket4 .coins33{
+            margin-top: 1210px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket4 .coin33{
+            margin-top: -18vh;
+            margin-left: -80vw;
+          position:absolute;
+          }
+          .ChildMarket4 .dollar33{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 17px;
+          }
+          .ChildMarket4 .plus33{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket4 .pkr33{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+      
+}
+
+@media (min-width:481px) and (max-width:768px){
+  .ChildHeader{
+    display: none;
+  }
+  .menu{
+    display: inline;
+    margin-top: 2.5vh;
+    padding-bottom: 2vh;
+    font-size: 7vw;
+    color: white;
+    margin-left: 85vw;
+  }
+  .ParentHeader{
+    height: 15%;
+  }
+  .Child{
+    display: flex;
+  }
+  .bitcoinimg{
+    width: 100%;
+    height: 700px;
+    display: inline;
+  }
+ .Child .headingmain{
+  position: absolute;
+  margin-left: 16vw;
+     width: 60vw;
+     margin-top: 440px;
+     font-size: 25px;
+  }
+  .mobileimg{
+    width: 80vw;
+    margin-left: -86vw;
+    margin-top: 0vh;
+    height: 420px;
+  }
+  .Child .paragraph{
+    margin-top: 590px;
+    font-size: 10px;
+    margin-left: 16vw;
+    width: 80vw;
+  }
+  .Child .Explore{
+    font-size: 10px;
+    padding: 0;
+       margin-left: 16vw;
+       width: 20vw;
+       padding: 1vh 1vh;
+       border-radius: 0.5vw;
+position: absolute;
+      margin-top: 640px;      
+  }
+  .ChildMarket .input1{
+    position: absolute;
+    margin-left: 3vw;
+    margin-top: 24px;
+    padding-left: 7vw;
+    height:35px;
+      }
+      .ChildMarket .icon{
+    position: absolute;
+    margin-left: -50vw;
+    margin-top: 35px;
+    height: 15px;
+    font-size: 22px;
+      }
+      .ParentMarket{
+    width: 100%;
+    height: 300px;
+      }
+      .ChildMarket{
+        margin-top: 300px;
+        display: flex;
+        justify-content:space-around;
+        height:100%;                                  
+        position:relative;
+        flex-wrap: wrap;
+      }
+      .ChildMarket .coins{
+        margin-top: 240px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket .coin1{
+        margin-top: -18vh;
+        margin-left: -85vw;
+      position:absolute;
+      }
+      .ChildMarket .dollar1{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket .plus1{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket .pkr1{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+      .ChildMarket ul{
+    margin-top:60px;
+    font-size: 20px;
+    margin-left: 3vw;
+    width: 48vw;
+      }
+      
+      .ChildMarket .coins2{
+        margin-top: 300px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket .coin2{
+        margin-top: -18vh;
+        margin-left: -84vw;
+      position:absolute;
+      }
+      .ChildMarket .dollar2{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket .plus2{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket .pkr2{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket .coins3{
+        margin-top: 360px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket .coin3{
+        margin-top: -18vh;
+        margin-left: -85vw;
+      position:absolute;
+      }
+      .ChildMarket .dollar3{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket .plus3{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket .pkr3{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket .coins4{
+        margin-top: 420px;
+        font-size: 20px;
+        margin-left: 8vw;
+        width: 48vw;
+      }
+      .ChildMarket .coin4{
+        margin-top: -18vh;
+        margin-left: -85vw;
+      position:absolute;
+      }
+      .ChildMarket .dollar4{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket .plus4{
+        margin-top: -18vh;
+        margin-left:71vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket .pkr4{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket .coins5{
+        margin-top: 480px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket .coin5{
+        margin-top: -18vh;
+        margin-left: -85vw;
+      position:absolute;
+      }
+      .ChildMarket .dollar5{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket .plus5{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket .pkr5{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket .coins6{
+        margin-top:540px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket .coin6{
+        margin-top: -18vh;
+        margin-left: -81vw;
+      position:absolute;
+      }
+      .ChildMarket .dollar6{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket .plus6{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket .pkr6{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket .coins7{
+        margin-top: 600px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket .coin7{
+        margin-top: -18vh;
+        margin-left: -85vw;
+      position:absolute;
+      }
+      .ChildMarket .dollar7{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket .plus7{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket .pkr7{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket .coins8{
+        margin-top: 660px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket .coin8{
+        margin-top: -18vh;
+        margin-left: -83vw;
+      position:absolute;
+      }
+      .ChildMarket .dollar8{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket .plus8{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket .pkr8{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+      .ParentMarket2{
+        width: 100%;
+        height: 500px;
+          }
+          .ChildMarket2{ 
+            display: flex;
+            position:relative;
+            justify-content:space-around;
+            height:100%;   
+          }
+          .ChildMarket2 .coins9{
+            margin-top:470px ;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket2 .coin9{
+            margin-top: -18vh;
+            margin-left: -83vw;
+          position:absolute;
+          }
+          .ChildMarket2 .dollar9{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 17px;
+          }
+          .ChildMarket2 .plus9{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket2 .pkr9{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+          .ChildMarket2 ul{      
+          margin-top:300px;
+          font-size: 20px;
+          margin-left: 3vw;
+          width: 48vw;
+          }
+          
+      .ChildMarket2 .coins10{
+        margin-top: 530px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket2 .coin10{
+        margin-top: -18vh;
+        margin-left: -85vw;
+      position:absolute;
+      }
+      .ChildMarket2 .dollar10{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket2 .plus10{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket2 .pkr10{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket2 .coins11{
+        margin-top: 590px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket2 .coin11{
+        margin-top: -18vh;
+        margin-left: -85vw;
+      position:absolute;
+      }
+      .ChildMarket2 .dollar11{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket2 .plus11{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket2 .pkr11{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket2 .coins12{
+        margin-top: 650px;
+        font-size: 20px;
+        margin-left: 8vw;
+        width: 48vw;
+      }
+      .ChildMarket2 .coin12{
+        margin-top: -18vh;
+        margin-left: -89vw;
+      position:absolute;
+      }
+      .ChildMarket2 .dollar12{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket2 .plus12{
+        margin-top: -18vh;
+        margin-left:71vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket2 .pkr12{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket2 .coins13{
+        margin-top: 710px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket2 .coin13{
+        margin-top: -18vh;
+        margin-left: -83vw;
+      position:absolute;
+      }
+      .ChildMarket2 .dollar13{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket2 .plus13{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket2 .pkr13{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket2 .coins14{
+        margin-top: 770px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket2 .coin14{
+        margin-top: -18vh;
+        margin-left: -83vw;
+      position:absolute;
+      }
+      .ChildMarket2 .dollar14{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket2 .plus14{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket2 .pkr14{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket2 .coins15{
+        margin-top: 830px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket2 .coin15{
+        margin-top: -18vh;
+        margin-left: -83vw;
+      position:absolute;
+      }
+      .ChildMarket2 .dollar15{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket2 .plus15{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket2 .pkr15{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket2 .coins16{
+        margin-top: 890px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket2 .coin16{
+        margin-top: -18vh;
+        margin-left: -80vw;
+      position:absolute;
+      }
+      .ChildMarket2 .dollar16{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 17px;
+      }
+      .ChildMarket2 .plus16{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket2 .pkr16{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+      
+      .ParentMarket3{
+        width: 100%;
+        height: 10px;
+          }
+          .ChildMarket3{
+            display: flex;
+            justify-content:space-around;
+            height:100%;
+            position:relative;
+          }
+          .ChildMarket3 .coins17{
+            margin-top: 365px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket3 .coin17{
+            margin-top: -18vh;
+            margin-left: -79vw;
+          position:absolute;
+          }
+          .ChildMarket3 .dollar17{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 17px;
+          }
+          .ChildMarket3 .plus17{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket3 .pkr17{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+          .ChildMarket3 ul{
+        margin-top:200px;
+        font-size: 20px;
+        margin-left: 3vw;
+        width: 48vw;
+          }
+          
+          .ChildMarket3 .coins18{
+            margin-top: 425px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket3 .coin18{
+            margin-top: -18vh;
+            margin-left: -82vw;
+          position:absolute;
+          }
+          .ChildMarket3 .dollar18{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 17px;
+          }
+          .ChildMarket3 .plus18{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket3 .pkr18{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+           
+          .ChildMarket3 .coins19{
+            margin-top: 485px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket3 .coin19{
+            margin-top: -18vh;
+            margin-left: -82vw;
+          position:absolute;
+          }
+          .ChildMarket3 .dollar19{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 17px;
+          }
+          .ChildMarket3 .plus19{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket3 .pkr19{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+           
+          .ChildMarket3 .coins20{
+            margin-top: 545px;
+            font-size: 20px;
+            margin-left: 9vw;
+            width: 48vw;
+          }
+          .ChildMarket3 .coin20{
+            margin-top: -18vh;
+            margin-left: -87vw;
+          position:absolute;
+          }
+          .ChildMarket3 .dollar20{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 17px;
+          }
+          .ChildMarket3 .plus20{
+            margin-top: -18vh;
+            margin-left:71vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket3 .pkr20{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+           
+          .ChildMarket3 .coins21{
+            margin-top: 605px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket3 .coin21{
+            margin-top: -18vh;
+            margin-left: -81vw;
+          position:absolute;
+          }
+          .ChildMarket3 .dollar21{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 17px;
+          }
+          .ChildMarket3 .plus21{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket3 .pkr21{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+           
+          .ChildMarket3 .coins22{
+            margin-top: 665px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket3 .coin22{
+            margin-top: -18vh;
+            margin-left: -81vw;
+          position:absolute;
+          }
+          .ChildMarket3 .dollar22{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 17px;
+          }
+          .ChildMarket3 .plus22{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket3 .pkr22{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+           
+          .ChildMarket3 .coins23{
+            margin-top: 725px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket3 .coin23{
+            margin-top: -18vh;
+            margin-left: -81vw;
+          position:absolute;
+          }
+          .ChildMarket3 .dollar23{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 17px;
+          }
+          .ChildMarket3 .plus23{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket3 .pkr23{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+           
+          .ChildMarket3 .coins24{
+            margin-top: 785px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket3 .coin24{
+            margin-top: -18vh;
+            margin-left: -77vw;
+          position:absolute;
+          }
+          .ChildMarket3 .dollar24{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 17px;
+          }
+          .ChildMarket3 .plus24{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket3 .pkr24{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+       
+          .ParentMarket4{
+            width: 100%;
+            height: 1660px;
+              }
+              .ChildMarket4{
+                    display: flex;
+                    justify-content:space-around;
+                    height:100%;
+                    position:relative;
+              }
+              .ChildMarket4 .coins25{
+                display:none;
+                margin-top: -805vh;
+                font-size: 20px;
+                margin-left: 28vw;
+                width: 48vw;
+              }
+              .ChildMarket4 .coin25{
+                margin-top: -18vh;
+                margin-left: -79.5vw;
+              position:absolute;
+              }
+              .ChildMarket4 .dollar25{
+                margin-top: -18vh;
+                margin-left: 20vw;
+                position: absolute;
+                font-size: 17px;
+              }
+              .ChildMarket4 .plus25{
+                margin-top: -18vh;
+                margin-left:75vw;
+                position: absolute;
+                font-size: 13px;
+              }
+              .ChildMarket4 .pkr25{
+                position: absolute;
+                margin-left: 20vw;
+                font-size: 10px;
+                margin-top: -12vh;
+              }
+              .ChildMarket4 ul{
+            margin-top:640px;
+            font-size: 20px;
+            margin-left: 3vw;
+            width: 48vw;
+              }
+              
+              .ChildMarket4 .coins26{
+                margin-top: 790px;
+                font-size: 20px;
+                margin-left: 5vw;
+                width: 48vw;
+              }
+              .ChildMarket4 .coin26{
+                margin-top: -18vh;
+                margin-left: -81vw;
+              position:absolute;
+              }
+              .ChildMarket4 .dollar26{
+                margin-top: -18vh;
+                margin-left: 20vw;
+                position: absolute;
+                font-size: 17px;
+              }
+              .ChildMarket4 .plus26{
+                margin-top: -18vh;
+                margin-left:75vw;
+                position: absolute;
+                font-size: 13px;
+              }
+              .ChildMarket4 .pkr26{
+                position: absolute;
+                margin-left: 20vw;
+                font-size: 10px;
+                margin-top: -12vh;
+              }
+               
+              .ChildMarket4 .coins27{
+                margin-top: 850px;
+                font-size: 20px;
+                margin-left: 5vw;
+                width: 48vw;
+              }
+              .ChildMarket4 .coin27{
+                margin-top: -18vh;
+                margin-left: -82vw;
+              position:absolute;
+              }
+              .ChildMarket4 .dollar27{
+                margin-top: -18vh;
+                margin-left: 20vw;
+                position: absolute;
+                font-size: 17px;
+              }
+              .ChildMarket4 .plus27{
+                margin-top: -18vh;
+                margin-left:75vw;
+                position: absolute;
+                font-size: 13px;
+              }
+              .ChildMarket4 .pkr27{
+                position: absolute;
+                margin-left: 20vw;
+                font-size: 10px;
+                margin-top: -12vh;
+              }
+               
+              .ChildMarket4 .coins28{
+                margin-top: 910px;
+                font-size: 20px;
+                margin-left: 8vw;
+                width: 48vw;
+              }
+              .ChildMarket4 .coin28{
+                margin-top: -18vh;
+                margin-left: -86vw;
+              position:absolute;
+              }
+              .ChildMarket4 .dollar28{
+                margin-top: -18vh;
+                margin-left: 20vw;
+                position: absolute;
+                font-size: 17px;
+              }
+              .ChildMarket4 .plus28{
+                margin-top: -18vh;
+                margin-left:71vw;
+                position: absolute;
+                font-size: 13px;
+              }
+              .ChildMarket4 .pkr28{
+                position: absolute;
+                margin-left: 20vw;
+                font-size: 10px;
+                margin-top: -12vh;
+              }
+               
+              .ChildMarket4 .coins29{
+                margin-top: 970px;
+                font-size: 20px;
+                margin-left: 5vw;
+                width: 48vw;
+              }
+              .ChildMarket4 .coin29{
+                margin-top: -18vh;
+                margin-left: -80vw;
+              position:absolute;
+              }
+              .ChildMarket4 .dollar29{
+                margin-top: -18vh;
+                margin-left: 20vw;
+                position: absolute;
+                font-size: 17px;
+              }
+              .ChildMarket4 .plus29{
+                margin-top: -18vh;
+                margin-left:75vw;
+                position: absolute;
+                font-size: 13px;
+              }
+              .ChildMarket4 .pkr29{
+                position: absolute;
+                margin-left: 20vw;
+                font-size: 10px;
+                margin-top: -12vh;
+              }
+               
+              .ChildMarket4 .coins30{
+                margin-top: 1030px;
+                font-size: 20px;
+                margin-left: 5vw;
+                width: 48vw;
+              }
+              .ChildMarket4 .coin30{
+                margin-top: -18vh;
+                margin-left: -79vw;
+              position:absolute;
+              }
+              .ChildMarket4 .dollar30{
+                margin-top: -18vh;
+                margin-left: 20vw;
+                position: absolute;
+                font-size: 17px;
+              }
+              .ChildMarket4 .plus30{
+                margin-top: -18vh;
+                margin-left:75vw;
+                position: absolute;
+                font-size: 13px;
+              }
+              .ChildMarket4 .pkr30{
+                position: absolute;
+                margin-left: 20vw;
+                font-size: 10px;
+                margin-top: -12vh;
+              }
+               
+              .ChildMarket4 .coins31{
+                margin-top: 1090px;
+                font-size: 20px;
+                margin-left: 5vw;
+                width: 48vw;
+              }
+              .ChildMarket4 .coin31{
+                margin-top: -18vh;
+                margin-left: -79vw;
+              position:absolute;
+              }
+              .ChildMarket4 .dollar31{
+                margin-top: -18vh;
+                margin-left: 20vw;
+                position: absolute;
+                font-size: 17px;
+              }
+              .ChildMarket4 .plus31{
+                margin-top: -18vh;
+                margin-left:75vw;
+                position: absolute;
+                font-size: 13px;
+              }
+              .ChildMarket4 .pkr31{
+                position: absolute;
+                margin-left: 20vw;
+                font-size: 10px;
+                margin-top: -12vh;
+              }
+               
+              .ChildMarket4 .coins32{
+                margin-top: 1150px;
+                font-size: 20px;
+                margin-left: 5vw;
+                width: 48vw;
+              }
+              .ChildMarket4 .coin32{
+                margin-top: -18vh;
+                margin-left: -76vw;
+              position:absolute;
+              }
+              .ChildMarket4 .dollar32{
+                margin-top: -18vh;
+                margin-left: 20vw;
+                position: absolute;
+                font-size: 17px;
+              }
+              .ChildMarket4 .plus32{
+                margin-top: -18vh;
+                margin-left:75vw;
+                position: absolute;
+                font-size: 13px;
+              }
+              .ChildMarket4 .pkr32{
+                position: absolute;
+                margin-left: 20vw;
+                font-size: 10px;
+                margin-top: -12vh;
+              }
+                 
+              .ChildMarket4 .coins33{
+                margin-top: 1210px;
+                font-size: 20px;
+                margin-left: 5vw;
+                width: 48vw;
+              }
+              .ChildMarket4 .coin33{
+                margin-top: -18vh;
+                margin-left: -80vw;
+              position:absolute;
+              }
+              .ChildMarket4 .dollar33{
+                margin-top: -18vh;
+                margin-left: 20vw;
+                position: absolute;
+                font-size: 17px;
+              }
+              .ChildMarket4 .plus33{
+                margin-top: -18vh;
+                margin-left:75vw;
+                position: absolute;
+                font-size: 13px;
+              }
+              .ChildMarket4 .pkr33{
+                position: absolute;
+                margin-left: 20vw;
+                font-size: 10px;
+                margin-top: -12vh;
+              }
+          
+}
+@media (min-width:769px) and (max-width:1024px){
+  .ChildHeader{
+    width: 100%;
+    height: 70px;
+    display: flex;
+  }
+  .menu{
+    display: none;
+  }
+  .ParentHeader{
+    display: flex;
+    width: 100%;
+    height: 70px;
+  }
+  .ChildHeader .bitahmed{
+    margin-top: 21px;
+    margin-left: 22vw;
+    font-size: 2vw;
+  }
+  .Child{
+    display: flex;
+  }
+  .bitcoinimg{
+    width: 100%;
+    height: 600px;
+    display: inline;
+  }
+ .Child .headingmain{
+  margin-left: -87.5vw;
+     width: 60vw;
+     margin-top: 170px;
+     font-size: 40px;
+  }
+  .mobileimg{
+    width: 40vw;
+    margin-left: -10vw;
+    margin-top: 6vh;
+    height: 420px;
+  }
+  .Child .paragraph{
+    margin-top: 390px;
+    font-size: 18px;
+    margin-left: 12vw;
+    width: 50vw;
+  }
+  .Child .Explore{
+    font-size: 10px;
+    padding: 0;
+       margin-left: 12vw;
+       width: 20vw;
+       padding: 1vh 1vh;
+       border-radius: 0.5vw;
+position: absolute;
+      margin-top: 500px;      
+  }
+  
+.ChildHeader .bitcoinlogo{
+  margin-left: -69.8vw;
+  margin-top: 21px;
+  font-size: 3vw;
+  cursor: context-menu;
+  }
+  .ChildHeader ul {
+    margin-left: 20vw;
+    margin-top: 2px;
+    font-size: 1.3vw;
+  }
+  .ChildMarket .input1{
+    position: absolute;
+    margin-left: 3vw;
+    margin-top: 1px;
+    padding-left: 7vw;
+    height:35px;
+      }
+      .ChildMarket .icon{
+    position: absolute;
+    margin-left: -50vw;
+    margin-top: 10px;
+    height: 15px;
+    font-size: 22px;
+      }
+      .ParentMarket{
+    width: 100%;
+    height: 300px;
+      }
+      .ChildMarket{
+        margin-top: 300px;
+        display: flex;
+        justify-content:space-around;
+        height:100%;                                  
+        position:relative;
+        flex-wrap: wrap;
+      }
+      .ChildMarket .coins{
+        margin-top: 240px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket .coin1{
+        margin-top: -18vh;
+        margin-left: -85vw;
+      position:absolute;
+      }
+      .ChildMarket .dollar1{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 23px;
+      }
+      .ChildMarket .plus1{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket .pkr1{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+      .ChildMarket ul{
+    margin-top:60px;
+    font-size: 20px;
+    margin-left: 3vw;
+    width: 48vw;
+      }
+      
+      .ChildMarket .coins2{
+        margin-top: 300px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket .coin2{
+        margin-top: -18vh;
+        margin-left: -84vw;
+      position:absolute;
+      }
+      .ChildMarket .dollar2{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 23px;
+      }
+      .ChildMarket .plus2{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket .pkr2{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket .coins3{
+        margin-top: 360px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket .coin3{
+        margin-top: -18vh;
+        margin-left: -85vw;
+      position:absolute;
+      }
+      .ChildMarket .dollar3{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 23px;
+      }
+      .ChildMarket .plus3{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket .pkr3{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket .coins4{
+        margin-top: 420px;
+        font-size: 20px;
+        margin-left: 8vw;
+        width: 48vw;
+      }
+      .ChildMarket .coin4{
+        margin-top: -18vh;
+        margin-left: -85vw;
+      position:absolute;
+      }
+      .ChildMarket .dollar4{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 23px;
+      }
+      .ChildMarket .plus4{
+        margin-top: -18vh;
+        margin-left:71vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket .pkr4{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket .coins5{
+        margin-top: 480px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket .coin5{
+        margin-top: -18vh;
+        margin-left: -85vw;
+      position:absolute;
+      }
+      .ChildMarket .dollar5{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 23px;
+      }
+      .ChildMarket .plus5{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket .pkr5{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket .coins6{
+        margin-top:540px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket .coin6{
+        margin-top: -18vh;
+        margin-left: -81vw;
+      position:absolute;
+      }
+      .ChildMarket .dollar6{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 23px;
+      }
+      .ChildMarket .plus6{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket .pkr6{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket .coins7{
+        margin-top: 600px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket .coin7{
+        margin-top: -18vh;
+        margin-left: -85vw;
+      position:absolute;
+      }
+      .ChildMarket .dollar7{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 23px;
+      }
+      .ChildMarket .plus7{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket .pkr7{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket .coins8{
+        margin-top: 660px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket .coin8{
+        margin-top: -18vh;
+        margin-left: -83vw;
+      position:absolute;
+      }
+      .ChildMarket .dollar8{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 23px;
+      }
+      .ChildMarket .plus8{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket .pkr8{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+      .ParentMarket2{
+        width: 100%;
+        height: 500px;
+          }
+          .ChildMarket2{ 
+            display: flex;
+            position:relative;
+            justify-content:space-around;
+            height:100%;   
+          }
+          .ChildMarket2 .coins9{
+            margin-top:470px ;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket2 .coin9{
+            margin-top: -18vh;
+            margin-left: -83vw;
+          position:absolute;
+          }
+          .ChildMarket2 .dollar9{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 23px;
+          }
+          .ChildMarket2 .plus9{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket2 .pkr9{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+          .ChildMarket2 ul{      
+          margin-top:300px;
+          font-size: 20px;
+          margin-left: 3vw;
+          width: 48vw;
+          }
+          
+      .ChildMarket2 .coins10{
+        margin-top: 530px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket2 .coin10{
+        margin-top: -18vh;
+        margin-left: -85vw;
+      position:absolute;
+      }
+      .ChildMarket2 .dollar10{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 23px;
+      }
+      .ChildMarket2 .plus10{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket2 .pkr10{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket2 .coins11{
+        margin-top: 590px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket2 .coin11{
+        margin-top: -18vh;
+        margin-left: -85vw;
+      position:absolute;
+      }
+      .ChildMarket2 .dollar11{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 23px;
+      }
+      .ChildMarket2 .plus11{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket2 .pkr11{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket2 .coins12{
+        margin-top: 650px;
+        font-size: 20px;
+        margin-left: 8vw;
+        width: 48vw;
+      }
+      .ChildMarket2 .coin12{
+        margin-top: -18vh;
+        margin-left: -89vw;
+      position:absolute;
+      }
+      .ChildMarket2 .dollar12{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 23px;
+      }
+      .ChildMarket2 .plus12{
+        margin-top: -18vh;
+        margin-left:71vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket2 .pkr12{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket2 .coins13{
+        margin-top: 710px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket2 .coin13{
+        margin-top: -18vh;
+        margin-left: -83vw;
+      position:absolute;
+      }
+      .ChildMarket2 .dollar13{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 23px;
+      }
+      .ChildMarket2 .plus13{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket2 .pkr13{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket2 .coins14{
+        margin-top: 770px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket2 .coin14{
+        margin-top: -18vh;
+        margin-left: -83vw;
+      position:absolute;
+      }
+      .ChildMarket2 .dollar14{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 23px;
+      }
+      .ChildMarket2 .plus14{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket2 .pkr14{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket2 .coins15{
+        margin-top: 830px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket2 .coin15{
+        margin-top: -18vh;
+        margin-left: -83vw;
+      position:absolute;
+      }
+      .ChildMarket2 .dollar15{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 23px;
+      }
+      .ChildMarket2 .plus15{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket2 .pkr15{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+       
+      .ChildMarket2 .coins16{
+        margin-top: 890px;
+        font-size: 20px;
+        margin-left: 5vw;
+        width: 48vw;
+      }
+      .ChildMarket2 .coin16{
+        margin-top: -18vh;
+        margin-left: -80vw;
+      position:absolute;
+      }
+      .ChildMarket2 .dollar16{
+        margin-top: -18vh;
+        margin-left: 20vw;
+        position: absolute;
+        font-size: 23px;
+      }
+      .ChildMarket2 .plus16{
+        margin-top: -18vh;
+        margin-left:75vw;
+        position: absolute;
+        font-size: 13px;
+      }
+      .ChildMarket2 .pkr16{
+        position: absolute;
+        margin-left: 20vw;
+        font-size: 10px;
+        margin-top: -12vh;
+      }
+      
+      .ParentMarket3{
+        width: 100%;
+        height: 10px;
+          }
+          .ChildMarket3{
+            display: flex;
+            justify-content:space-around;
+            height:100%;
+            position:relative;
+          }
+          .ChildMarket3 .coins17{
+            margin-top: 365px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket3 .coin17{
+            margin-top: -18vh;
+            margin-left: -79vw;
+          position:absolute;
+          }
+          .ChildMarket3 .dollar17{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 23px;
+          }
+          .ChildMarket3 .plus17{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket3 .pkr17{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+          .ChildMarket3 ul{
+        margin-top:200px;
+        font-size: 20px;
+        margin-left: 3vw;
+        width: 48vw;
+          }
+          
+          .ChildMarket3 .coins18{
+            margin-top: 425px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket3 .coin18{
+            margin-top: -18vh;
+            margin-left: -82vw;
+          position:absolute;
+          }
+          .ChildMarket3 .dollar18{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 23px;
+          }
+          .ChildMarket3 .plus18{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket3 .pkr18{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+           
+          .ChildMarket3 .coins19{
+            margin-top: 485px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket3 .coin19{
+            margin-top: -18vh;
+            margin-left: -82vw;
+          position:absolute;
+          }
+          .ChildMarket3 .dollar19{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 23px;
+          }
+          .ChildMarket3 .plus19{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket3 .pkr19{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+           
+          .ChildMarket3 .coins20{
+            margin-top: 545px;
+            font-size: 20px;
+            margin-left: 9vw;
+            width: 48vw;
+          }
+          .ChildMarket3 .coin20{
+            margin-top: -18vh;
+            margin-left: -87vw;
+          position:absolute;
+          }
+          .ChildMarket3 .dollar20{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 23px;
+          }
+          .ChildMarket3 .plus20{
+            margin-top: -18vh;
+            margin-left:71vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket3 .pkr20{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+           
+          .ChildMarket3 .coins21{
+            margin-top: 605px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket3 .coin21{
+            margin-top: -18vh;
+            margin-left: -81vw;
+          position:absolute;
+          }
+          .ChildMarket3 .dollar21{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 23px;
+          }
+          .ChildMarket3 .plus21{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket3 .pkr21{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+           
+          .ChildMarket3 .coins22{
+            margin-top: 665px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket3 .coin22{
+            margin-top: -18vh;
+            margin-left: -81vw;
+          position:absolute;
+          }
+          .ChildMarket3 .dollar22{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 23px;
+          }
+          .ChildMarket3 .plus22{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket3 .pkr22{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+           
+          .ChildMarket3 .coins23{
+            margin-top: 725px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket3 .coin23{
+            margin-top: -18vh;
+            margin-left: -81vw;
+          position:absolute;
+          }
+          .ChildMarket3 .dollar23{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 23px;
+          }
+          .ChildMarket3 .plus23{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket3 .pkr23{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+           
+          .ChildMarket3 .coins24{
+            margin-top: 785px;
+            font-size: 20px;
+            margin-left: 5vw;
+            width: 48vw;
+          }
+          .ChildMarket3 .coin24{
+            margin-top: -18vh;
+            margin-left: -77vw;
+          position:absolute;
+          }
+          .ChildMarket3 .dollar24{
+            margin-top: -18vh;
+            margin-left: 20vw;
+            position: absolute;
+            font-size: 23px;
+          }
+          .ChildMarket3 .plus24{
+            margin-top: -18vh;
+            margin-left:75vw;
+            position: absolute;
+            font-size: 13px;
+          }
+          .ChildMarket3 .pkr24{
+            position: absolute;
+            margin-left: 20vw;
+            font-size: 10px;
+            margin-top: -12vh;
+          }
+       
+          .ParentMarket4{
+            width: 100%;
+            height: 1550px;
+              }
+              .ChildMarket4{
+                    display: flex;
+                    justify-content:space-around;
+                    height:100%;
+                    position:relative;
+              }
+              .ChildMarket4 .coins25{
+                display:none;
+                margin-top: -805vh;
+                font-size: 20px;
+                margin-left: 28vw;
+                width: 48vw;
+              }
+              .ChildMarket4 .coin25{
+                margin-top: -18vh;
+                margin-left: -79.5vw;
+              position:absolute;
+              }
+              .ChildMarket4 .dollar25{
+                margin-top: -18vh;
+                margin-left: 20vw;
+                position: absolute;
+                font-size: 23px;
+              }
+              .ChildMarket4 .plus25{
+                margin-top: -18vh;
+                margin-left:75vw;
+                position: absolute;
+                font-size: 13px;
+              }
+              .ChildMarket4 .pkr25{
+                position: absolute;
+                margin-left: 20vw;
+                font-size: 10px;
+                margin-top: -12vh;
+              }
+              .ChildMarket4 ul{
+            margin-top:640px;
+            font-size: 20px;
+            margin-left: 3vw;
+            width: 48vw;
+              }
+              
+              .ChildMarket4 .coins26{
+                margin-top: 790px;
+                font-size: 20px;
+                margin-left: 5vw;
+                width: 48vw;
+              }
+              .ChildMarket4 .coin26{
+                margin-top: -18vh;
+                margin-left: -81vw;
+              position:absolute;
+              }
+              .ChildMarket4 .dollar26{
+                margin-top: -18vh;
+                margin-left: 20vw;
+                position: absolute;
+                font-size: 23px;
+              }
+              .ChildMarket4 .plus26{
+                margin-top: -18vh;
+                margin-left:75vw;
+                position: absolute;
+                font-size: 13px;
+              }
+              .ChildMarket4 .pkr26{
+                position: absolute;
+                margin-left: 20vw;
+                font-size: 10px;
+                margin-top: -12vh;
+              }
+               
+              .ChildMarket4 .coins27{
+                margin-top: 850px;
+                font-size: 20px;
+                margin-left: 5vw;
+                width: 48vw;
+              }
+              .ChildMarket4 .coin27{
+                margin-top: -18vh;
+                margin-left: -82vw;
+              position:absolute;
+              }
+              .ChildMarket4 .dollar27{
+                margin-top: -18vh;
+                margin-left: 20vw;
+                position: absolute;
+                font-size: 23px;
+              }
+              .ChildMarket4 .plus27{
+                margin-top: -18vh;
+                margin-left:75vw;
+                position: absolute;
+                font-size: 13px;
+              }
+              .ChildMarket4 .pkr27{
+                position: absolute;
+                margin-left: 20vw;
+                font-size: 10px;
+                margin-top: -12vh;
+              }
+               
+              .ChildMarket4 .coins28{
+                margin-top: 910px;
+                font-size: 20px;
+                margin-left: 8vw;
+                width: 48vw;
+              }
+              .ChildMarket4 .coin28{
+                margin-top: -18vh;
+                margin-left: -86vw;
+              position:absolute;
+              }
+              .ChildMarket4 .dollar28{
+                margin-top: -18vh;
+                margin-left: 20vw;
+                position: absolute;
+                font-size: 23px;
+              }
+              .ChildMarket4 .plus28{
+                margin-top: -18vh;
+                margin-left:71vw;
+                position: absolute;
+                font-size: 13px;
+              }
+              .ChildMarket4 .pkr28{
+                position: absolute;
+                margin-left: 20vw;
+                font-size: 10px;
+                margin-top: -12vh;
+              }
+               
+              .ChildMarket4 .coins29{
+                margin-top: 970px;
+                font-size: 20px;
+                margin-left: 5vw;
+                width: 48vw;
+              }
+              .ChildMarket4 .coin29{
+                margin-top: -18vh;
+                margin-left: -80vw;
+              position:absolute;
+              }
+              .ChildMarket4 .dollar29{
+                margin-top: -18vh;
+                margin-left: 20vw;
+                position: absolute;
+                font-size: 23px;
+              }
+              .ChildMarket4 .plus29{
+                margin-top: -18vh;
+                margin-left:75vw;
+                position: absolute;
+                font-size: 13px;
+              }
+              .ChildMarket4 .pkr29{
+                position: absolute;
+                margin-left: 20vw;
+                font-size: 10px;
+                margin-top: -12vh;
+              }
+               
+              .ChildMarket4 .coins30{
+                margin-top: 1030px;
+                font-size: 20px;
+                margin-left: 5vw;
+                width: 48vw;
+              }
+              .ChildMarket4 .coin30{
+                margin-top: -18vh;
+                margin-left: -79vw;
+              position:absolute;
+              }
+              .ChildMarket4 .dollar30{
+                margin-top: -18vh;
+                margin-left: 20vw;
+                position: absolute;
+                font-size: 23px;
+              }
+              .ChildMarket4 .plus30{
+                margin-top: -18vh;
+                margin-left:75vw;
+                position: absolute;
+                font-size: 13px;
+              }
+              .ChildMarket4 .pkr30{
+                position: absolute;
+                margin-left: 20vw;
+                font-size: 10px;
+                margin-top: -12vh;
+              }
+               
+              .ChildMarket4 .coins31{
+                margin-top: 1090px;
+                font-size: 20px;
+                margin-left: 5vw;
+                width: 48vw;
+              }
+              .ChildMarket4 .coin31{
+                margin-top: -18vh;
+                margin-left: -79vw;
+              position:absolute;
+              }
+              .ChildMarket4 .dollar31{
+                margin-top: -18vh;
+                margin-left: 20vw;
+                position: absolute;
+                font-size: 23px;
+              }
+              .ChildMarket4 .plus31{
+                margin-top: -18vh;
+                margin-left:75vw;
+                position: absolute;
+                font-size: 13px;
+              }
+              .ChildMarket4 .pkr31{
+                position: absolute;
+                margin-left: 20vw;
+                font-size: 10px;
+                margin-top: -12vh;
+              }
+               
+              .ChildMarket4 .coins32{
+                margin-top: 1150px;
+                font-size: 20px;
+                margin-left: 5vw;
+                width: 48vw;
+              }
+              .ChildMarket4 .coin32{
+                margin-top: -18vh;
+                margin-left: -76vw;
+              position:absolute;
+              }
+              .ChildMarket4 .dollar32{
+                margin-top: -18vh;
+                margin-left: 20vw;
+                position: absolute;
+                font-size: 23px;
+              }
+              .ChildMarket4 .plus32{
+                margin-top: -18vh;
+                margin-left:75vw;
+                position: absolute;
+                font-size: 13px;
+              }
+              .ChildMarket4 .pkr32{
+                position: absolute;
+                margin-left: 20vw;
+                font-size: 10px;
+                margin-top: -12vh;
+              }
+                 
+              .ChildMarket4 .coins33{
+                margin-top: 1210px;
+                font-size: 20px;
+                margin-left: 5vw;
+                width: 48vw;
+              }
+              .ChildMarket4 .coin33{
+                margin-top: -18vh;
+                margin-left: -80vw;
+              position:absolute;
+              }
+              .ChildMarket4 .dollar33{
+                margin-top: -18vh;
+                margin-left: 20vw;
+                position: absolute;
+                font-size: 23px;
+              }
+              .ChildMarket4 .plus33{
+                margin-top: -18vh;
+                margin-left:75vw;
+                position: absolute;
+                font-size: 13px;
+              }
+              .ChildMarket4 .pkr33{
+                position: absolute;
+                margin-left: 20vw;
+                font-size: 10px;
+                margin-top: -12vh;
+              }
+          
+}
+
+
+@media (min-width:1025px) and (max-width:1440px){
+  .ChildHeader{
+    width: 100%;
+    height: 70px;
+    display: flex;
+  }
+  .menu{
+    display: none;
+  }
+  .ParentHeader{
+    display: flex;
+    width: 100%;
+    height: 70px;
+  }
+  .ChildHeader .bitahmed{
+    margin-top: 15px;
+    margin-left: 22vw;
+    font-size: 2vw;
+  }
+  .Child{
+    display: flex;
+  }
+  .bitcoinimg{
+    width: 100%;
+    height: 523px;
+    display: inline;
+  }
+ .Child .headingmain{
+  margin-left: -87.5vw;
+     width: 60vw;
+     margin-top: 120px;
+     font-size: 40px;
+  }
+  .mobileimg{
+    width: 40vw;
+    margin-left: -15vw;
+    margin-top: 6vh;
+    height: 420px;
+  }
+  .Child .paragraph{
+    margin-top: 340px;
+    font-size: 18px;
+    margin-left: 12vw;
+    width: 50vw;
+  }
+  .Child .Explore{
+    font-size: 10px;
+    padding: 0;
+       margin-left: 12vw;
+       width: 20vw;
+       padding: 1vh 1vh;
+       border-radius: 0.5vw;
+position: absolute;
+      margin-top: 450px;      
+  }
+  
+.ChildHeader .bitcoinlogo{
+  margin-left: -69.5vw;
+  margin-top: 15px;
+  font-size: 3vw;
+  cursor: context-menu;
+  }
+  .ChildHeader ul {
+    margin-left: 20vw;
+    margin-top: 2px;
+    font-size: 1.3vw;
   }
 }
