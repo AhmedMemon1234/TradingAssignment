@@ -3,7 +3,7 @@ import { MdSearch } from "react-icons/md";
 import { useEffect, useState } from "react";
 
 export default function Market() {
-  const ApiKey = "b43ab2c4fa598f1e9495a8b520947e51";
+  const ApiKey = "06cade53bd56fb49abeb566fcf17ea99";
   const [search, setSearch] = useState("");
   const [data, setData] = useState<any>(null);
   useEffect(() =>{
