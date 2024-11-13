@@ -12,7 +12,7 @@ export default function New() {
     const ApiKey = "06cade53bd56fb49abeb566fcf17ea99";
   const [data, setData] = useState<ApiResponse | null>(null);
   useEffect(() =>{
-    fetch(`http://api.coinlayer.com/live?access_key=${ApiKey}`)
+    fetch(`https://api.coinlayer.com/live?access_key=${ApiKey}`)
     .then((response) => response.json())
     .then((jsonConverted)=>{
         console.log("JSON Converted Data :", jsonConverted)
