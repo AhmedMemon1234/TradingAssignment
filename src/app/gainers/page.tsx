@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 
 export default function Gain() {
     const ApiKey = "06cade53bd56fb49abeb566fcf17ea99";
-  const [search, setSearch] = useState("");
   const [data, setData] = useState<any>(null);
   useEffect(() =>{
     fetch(`http://api.coinlayer.com/live?access_key=${ApiKey}`)
