@@ -10,7 +10,7 @@ interface Rates {
    rates: Rates;
  }
 export default function Lose() {
-    const ApiKey = "512fe58c239bbb5cf6a45146a5fe0487";
+    const ApiKey = "ee96952a5ee830a7198a0bc13b6c75fb";
   const [data, setData] = useState<ApiResponse | null>(null);
   useEffect(() =>{
     fetch(`https://api.coinlayer.com/live?access_key=${ApiKey}`)
